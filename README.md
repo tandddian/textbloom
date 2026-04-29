@@ -58,4 +58,4 @@ A character-by-character reveal animation with blur transition.
 
 ## License
 
-ISC
+MIT
