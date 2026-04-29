@@ -1,0 +1,10 @@
+
+.tb-char {
+  opacity: 0;
+  filter: blur(5px);
+  transition: opacity 0.4s ease, filter 0.4s ease;
+}
+.tb-char.tb-visible {
+  opacity: 1;
+  filter: blur(0);
+}

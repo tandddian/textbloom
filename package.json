@@ -1,0 +1,57 @@
+{
+  "name": "textbloom",
+  "version": "0.1.2",
+  "description": "A React text animation component library",
+  "type": "module",
+  "main": "./dist/index.cjs.js",
+  "module": "./dist/index.es.js",
+  "types": "./dist/index.d.ts",
+  "style": "./dist/textbloom.css",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.es.js",
+      "require": "./dist/index.cjs.js"
+    },
+    "./style.css": "./dist/textbloom.css"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "vite build && echo 'export { TextReveal } from \"./src/components/TextReveal\";' > dist/index.d.ts && echo 'export type { TextRevealProps } from \"./src/components/TextReveal\";' >> dist/index.d.ts",
+    "dev": "vite build --watch"
+  },
+  "keywords": [
+    "react",
+    "text",
+    "animation",
+    "component"
+  ],
+  "author": "your-name",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tandddian/textbloom.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tandddian/textbloom/issues"
+  },
+  "homepage": "https://github.com/tandddian/textbloom#readme",
+  "packageManager": "pnpm@10.28.0",
+  "peerDependencies": {
+    "react": ">=17",
+    "react-dom": ">=17"
+  },
+  "devDependencies": {
+    "@types/node": "^25.6.0",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.1",
+    "react": "^19.2.5",
+    "react-dom": "^19.2.5",
+    "typescript": "^6.0.3",
+    "vite": "^8.0.10",
+    "vite-plugin-dts": "^4.5.4"
+  }
+}
